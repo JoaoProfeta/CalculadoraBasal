@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+                <div class="apresentacao-conteudo">
+                    <h1>Gasto calórico Basal</h1>
+                    <p> Iniciando uma nova vida com rotina de exercícios? é necessario saber o quanto de calorias pode-se consumir em seu dia, baseado em seu gasto calórico basal!!</p>
+                </div>
+
+         
+            
+             
+            <div class="container">
+                <table>
+                    <th colspan="2">Calculo Basal</th>
+                    <tr>
+                        <td>Sexo:</td>
+                        <td class="sexo-td">
+                            
+                            <input type="radio" name="radio-sex" id="masc" checked> 
+                            <label for="masc">M</label>
+                            
+                            <input type="radio" name="radio-sex" id="fem">
+                            <label for="fem">F</label>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="td-input">Peso:</td>
+                        <td><input type="text" id="weight" required></td>
+                        <td><span>KG</span></td>
+                    </tr>
+                    <tr>
+                        <td>Altura:</td>
+                        <td class="td-input"><input type="text" id="height" required></td>
+                        <td><Span>CM</Span></td>
+                    </tr>
+                    <tr>
+                        <td>Idade:</td>
+                        <td class="td-input"><input type="text" id="age" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="Resultado" onclick="calculoResult()">
+                        </td>
+                        <td>
+                            <input type="text" id="result" disabled>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            
+        
+        
+    </main>
+    <script src="calculo.js"></script>
+</body>
+</html>
