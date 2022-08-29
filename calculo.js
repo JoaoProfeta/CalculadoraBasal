@@ -1,28 +1,51 @@
-           
- var getWeight = document.getElementById(`weight`)
- var getHeight = document.getElementById(`height`)
- var getAge = document.getElementById(`age`)
- var result = document.getElementById(`result`)
  
-function calculoResult(){
-    var sexo = document.getElementsByName('radio-sex')
-    
-    var weight = Number(getWeight.value)
-    var height = Number(getHeight.value)
-    var age = Number(getAge.value)
+ 
+ //get elements and values
+    const getWeight = document.getElementById(`weight`)
+    const getHeight = document.getElementById(`height`)
+    const getAge = document.getElementById(`age`)
+    const result = document.getElementById(`result`)
+    const sex = document.getElementsByName('radio-sex')
+    const btn = document.getElementById('btn-result')
 
-    if (sexo[0].checked) {
+   
 
-        var basalCalculoMen = 66 + (13.8 * weight) + (5 * height)-(6.8 * age)
 
-        result.value = Math.round(basalCalculoMen)
+    btn.addEventListener('click', () =>{
         
-    } else {
-        var basalCalculationWomen = 665 + (9.6 * weight) + (1.8 * height) - (4.7 * age)
+        const weight = Number(getWeight.value)
+        const height = Number(getHeight.value)
+        const age = Number(getAge.value)
+        
+       
 
-            result.value = Math.round(basalCalculationWomen)
-    }
-}
+        if (sex[0].checked) {
+
+            let basalCalculoMen = 66 + (13.8 * weight) + (5 * height)-(6.8 * age)
+
+            result.value = Math.round(basalCalculoMen)
+            
+        
+        
+            
+            
+        } else {
+            let basalCalculationWomen = 665 + (9.6 * weight) + (1.8 * height) - (4.7 * age)
+
+                result.value = Math.round(basalCalculationWomen)
+           
+                
+        }
+        getWeight.value= '0'
+        getHeight.value= '0'
+        getAge.value= '0'
+        
+
+    })
+
+    
+   
+
 
 
 
