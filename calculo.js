@@ -8,10 +8,10 @@
     const sex = document.getElementsByName('radio-sex')
     const btn = document.getElementById('btn-result')
 
-   
 
 
-    btn.addEventListener('click', () =>{
+
+    function calculo(){
         
         const weight = Number(getWeight.value)
         const height = Number(getHeight.value)
@@ -19,7 +19,11 @@
         
        
 
-        if (sex[0].checked) {
+        if(weight < 1 || height < 1 || age < 1){
+            alert('algo deu errado, verifique se os dados foram preencidos corretamente')
+        }
+
+        if (sex[0].checked && weight > 1 && height > 1 && age > 1 ) {
 
             let basalCalculoMen = 66 + (13.8 * weight) + (5 * height)-(6.8 * age)
 
@@ -29,20 +33,51 @@
         
             
             
-        } else {
+        } else if(sex[1].checked && weight > 1 && height > 1 && age > 1 ) {
+
             let basalCalculationWomen = 665 + (9.6 * weight) + (1.8 * height) - (4.7 * age)
 
                 result.value = Math.round(basalCalculationWomen)
            
                 
         }
-        getWeight.value= '0'
-        getHeight.value= '0'
-        getAge.value= '0'
+        
+        getWeight.value= ''
+        getHeight.value= ''
+        getAge.value= ''
         
 
-    })
+    }
 
+    
+
+      
+
+        document.addEventListener('keypress',function(e){
+
+           
+            if(e.key === "Enter"){
+
+                btn.click();
+
+            }
+            console.log('funcionou')
+        })
+
+
+ 
+ 
+    // Eventos
+    //CLICK
+    btn.addEventListener('click', calculo)
+
+    
+    
+        
+       
+
+   
+    
     
    
 
