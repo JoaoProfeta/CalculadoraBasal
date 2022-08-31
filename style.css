@@ -2,32 +2,27 @@
 
 *{
     padding: 0;
-    margin: 0;
-    
+    margin: 0;  
 }
 body,html{
     font-family: sans-serif;
     width: 100%;
     height: 100%;
-    min-width: 400px;
-   overflow-x: hidden;
-    
-    
 }
 body{
-    background-image: url(corrida1.jpg) ;
+    background-image: url(corrida1.jpg);
     background-repeat: repeat-y;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
 }
-
 /* main */
-
 main{
-    width: 90vw;
+    
+    width: 100vw;
     height: 100vh;
     justify-content: center;
     display: flex;
+    
 }
 .container{
     
@@ -41,7 +36,6 @@ main{
     opacity: 0.8;
     
 }
-
 /* -----conteudos-----*/
 .apresentacao-conteudo{
     width: 60vw;
@@ -50,7 +44,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 15% 10%;
+    margin: 15%;
 }
 .apresentacao-conteudo h1{
     margin-bottom: 7%;
@@ -60,7 +54,6 @@ main{
     text-indent: 5%;
     text-align: center;
     background: rgba(56,255,0,0.2) ;
-    
     font-size: 1.5em;
     font-weight: 900;
     color: #fff;
@@ -111,25 +104,77 @@ input[type="button"]{
 
 
 
-@media (max-width:650px){
-    body{
-        background-position: left;
+
+
+
+@media (max-width:750px){
+    body,html{
+        background-position: center top;
     }
+    .apresentacao-conteudo h1{
+        font-size: 2em;
+    }
+    .apresentacao-conteudo p{
+        font-size: 1.2em;
+    }
+    .container{
+        width: 400px;
+    }
+}
+
+@media (max-width:600px){
+    /*geral*/
+    body,html{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+
     main{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 5%;
+        width: 300px;
         
-        padding-bottom: 10%;
+    }
+
+    .container{
+        width: 300px;
     }
 
 
+    
+    /*apresentação conteudo*/
     .apresentacao-conteudo h1{
-        font-size: 2em;
+        font-size: 1.5em;
+
     }
     .apresentacao-conteudo p{
-        font-size: 1em;
+        font-size: .8em
+        ;
     }
+
    
 }
+
+@media (max-width:400px){
+    main{
+        padding-bottom: 10%;
+    }
+    .container{
+        height:300px ;
+        width: 200px;
+    }
+    .apresentacao-conteudo h1{
+        font-size: 1.2em;
+    }
+    .apresentacao-conteudo p{
+        font-size: .8em;
+    }
+}
+
+
+
