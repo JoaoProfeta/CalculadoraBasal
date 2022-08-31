@@ -1,3 +1,4 @@
+
 /*  geral  */
 
 *{
@@ -15,7 +16,9 @@ body{
     display: flex;
     justify-content: center;  
 }
+
 /* main */
+
 main{
     
     width: 100vw;
@@ -36,7 +39,9 @@ main{
     opacity: 0.8;
     
 }
+
 /* -----conteudos-----*/
+
 .apresentacao-conteudo{
     width: 60vw;
     color: #32CD32;
@@ -62,7 +67,6 @@ main{
 
 }
 
-
 /* table */ 
 
 table{
@@ -70,9 +74,7 @@ table{
     width: 100%;
     height: 100%;
 }
-
 td{
-   
     text-align: center;
     font-size: 1.2em;
 }
@@ -84,7 +86,9 @@ span{
     opacity: 0.3;
 
 }
+
 /*-----inputs-----*/
+
 input[type="text"]{
     width: 98%;
     height: 75%;
@@ -102,10 +106,11 @@ input[type="button"]{
     cursor: pointer;
 }
 
+/*-------------------------------------*/
+/*-------------------------------------*/
 
 
-
-
+/*settings responsive*/
 
 @media (max-width:750px){
     body,html{
@@ -122,15 +127,14 @@ input[type="button"]{
     }
 }
 
+
 @media (max-width:600px){
-    /*geral*/
     body,html{
         
         display: flex;
         align-items: center;
         justify-content: center;   
     }
-
     main{
         display: flex;
         flex-direction: column;
@@ -140,25 +144,21 @@ input[type="button"]{
         width: 300px;
         
     }
-
     .container{
         width: 300px;
     }
-
-
-    
     /*apresentação conteudo*/
     .apresentacao-conteudo h1{
         font-size: 1.5em;
 
     }
     .apresentacao-conteudo p{
-        font-size: .8em
-        ;
+        font-size: .8em;
     }
 
    
 }
+
 
 @media (max-width:400px){
     main{
