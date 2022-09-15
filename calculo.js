@@ -85,8 +85,7 @@
 
  
  
-    // Eventos
-    //CLICK
+    // Event
     btn.addEventListener('click', calculo)
 
     
