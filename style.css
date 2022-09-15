@@ -11,7 +11,7 @@ body,html{
     height: 100%;
 }
 body{
-    background-image: url(corrida1.jpg);
+    background-image: url(assets/corrida-img-2.jpg);
     background-repeat: repeat-y;
     display: flex;
     justify-content: center;  
@@ -111,7 +111,11 @@ input[type="button"]{
 
 
 /*settings responsive*/
-
+@media (max-width: 1260px){
+    body{
+        background-image: url(assets/corrida-img-1.jpg);
+    }
+}
 @media (max-width:750px){
     body,html{
         background-position: center top;
