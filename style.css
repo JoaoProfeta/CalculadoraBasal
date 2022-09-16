@@ -30,8 +30,7 @@ main{
     display: flex;
     
 }
-.container{
-    
+.container{ 
     background:#708090;
     width: 350px;
     height: 450px;
@@ -78,6 +77,8 @@ form{
     width: 100%;
     height: 100%;
     border-radius: 4%;   
+    font-weight:500;
+    
     
 }
 
@@ -87,14 +88,15 @@ fieldset{
     border: none;
     display: grid;
     gap: 10px;
-    
     column-gap: 2%;
     grid-template-columns: 40% 50% 10%;
-    grid-template-rows:16% 16% 16% 16% 16% ;
-    
+    grid-template-rows:16% 16% 16% 16% 16% ; 
 }
 
 legend{
+    font-style: italic;
+    color:#32CD32 ;
+    font-weight: 600;
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 10%;
@@ -208,7 +210,6 @@ input[type="text"]{
 
 @media (max-width:600px){
     body,html{
-        
         display: flex;
         align-items: center;
         justify-content: center;  
@@ -240,12 +241,15 @@ input[type="text"]{
     legend{
         font-size: 1rem;
     }
-    .span-sex{
-        
+    .span-sex{  
         font-size: 1rem;
     }
    #button{
     font-size: .8rem;
+   }
+   .span-reference{
+    font-size: .5rem;
+    text-align: start;
    }
 }
 
