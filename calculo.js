@@ -1,13 +1,13 @@
  
  
  //get elements and values
-    const getSex = document.getElementsByName('radio-sex')//input[radio] >> adquirindo o sexo selecionado
-    const getWeight = document.getElementById(`weight`)//peso(em KG)
-    const getHeight = document.getElementById(`height`)//altura(em CM)
-    const getAge = document.getElementById(`age`)//idade
-    const btn = document.getElementById('btn-result')//botão para exibir resultado
-    const result = document.getElementById(`result`)//exibição de resultado
-
+    const getSex = document.getElementsByName("radio-sex")//input[radio] >> adquirindo o sexo selecionado
+    const getWeight = document.getElementById("weight")//peso(em KG)
+    const getHeight = document.getElementById("height")//altura(em CM)
+    const getAge = document.getElementById("age")//idade
+    const btn = document.getElementById("btn-result")//botão para exibir resultado
+    const result = document.getElementById("result")//exibição de resultado
+    const form = document.getElementById("form-calc")
     
 
 
@@ -56,8 +56,9 @@
     
 
       
-    //disparar função após apertar o ENTER
-    document.addEventListener('keypress',function(e){
+    //disparar função após apertar o ENTER >> metodo para caso mude o form para uma table, bom proveito do código amigo <3
+    
+    /*document.addEventListener('keypress',function(e){
             
             const weight = Number(getWeight.value)
             const height = Number(getHeight.value)
@@ -80,7 +81,7 @@
 
 
            
-        })
+        })*/
 
 
  
@@ -88,38 +89,7 @@
     // Event
     btn.addEventListener('click', calculo)
 
-    function handleSubmit(event) {
+    form.addEventListener("submit", function(event){
         event.preventDefault();
-      }   
-
-    
-    
-        
-       
-
-   
-    
-    
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      })   
 
