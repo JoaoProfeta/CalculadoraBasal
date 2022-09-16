@@ -1,5 +1,7 @@
 
+
 /*  general  */
+/*-------------------------------------*/
 
 *{
     padding: 0;
@@ -21,6 +23,7 @@ body{
 }
 
 /* main */
+/*-------------------------------------*/
 
 main{
     
@@ -43,8 +46,6 @@ main{
     animation-delay: 1.4s;
     
 }
-
-/* -----conteudos-----*/
 
 .apresentacao-conteudo{
     width: 60vw;
@@ -72,6 +73,8 @@ main{
 }
 
 /* form*/ 
+/*-------------------------------------*/
+
 form{
     background: #fff;
     width: 100%;
@@ -115,6 +118,8 @@ legend{
 
 
 /*-----inputs-----*/
+/*-------------------------------------*/
+
 #btn-result{
     grid-row-start:5 ;
 }
@@ -147,7 +152,11 @@ input[type="text"]{
     border: 1px solid #32CD32;
     border-radius: 18px;
 }
+
+
+
  /*----- animation -----*/
+/*-------------------------------------*/
 
 @keyframes fromRight{
     from{
@@ -176,16 +185,7 @@ input[type="text"]{
 
 
 
-
-
-
-
-
-
-
-
-
-/*-----------------MEDIA--------------------*/
+/*-----------------@MEDIA--------------------*/
 /*-------------------------------------*/
 
 
@@ -216,13 +216,15 @@ input[type="text"]{
         font-size: .8rem;
      }
     .span-reference{
-        font-size: .5rem;
+        font-size: .7rem;
         text-align: start;
     }
     input{
         font-size: 1rem;
     }
 }
+
+
 @media (max-width:750px){
     body,html{
         background-position: center top;
