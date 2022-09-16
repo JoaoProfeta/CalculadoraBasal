@@ -118,6 +118,9 @@ legend{
 #btn-result{
     grid-row-start:5 ;
 }
+input{
+    font-size: 1.8rem;
+}
 input[type="text"]{
     grid-row-end:6 ;
 }
@@ -192,10 +195,7 @@ input[type="text"]{
         background-image: url(assets/corrida-img-1.jpg);
     }
 }
-@media (max-width:750px){
-    body,html{
-        background-position: center top;
-    }
+@media (max-width:1000px){
     .apresentacao-conteudo h1{
         font-size: 2em;
     }
@@ -203,8 +203,37 @@ input[type="text"]{
         font-size: 1.2em;
     }
     .container{
-        width: 400px;
+       height: 500px;
     }
+    
+    legend{
+        font-size:1rem;
+    }
+    .span-sex{  
+        font-size: 1rem;
+    }
+    #btn-result{
+        font-size: .8rem;
+     }
+    .span-reference{
+        font-size: .5rem;
+        text-align: start;
+    }
+    input{
+        font-size: 1rem;
+    }
+}
+@media (max-width:750px){
+    body,html{
+        background-position: center top;
+    }
+    .apresentacao-conteudo h1 {
+        font-size: 1.5rem;
+    }
+    .apresentacao-conteudo p {
+        font-size: 1.3rem;
+    }
+    
 }
 
 
@@ -238,19 +267,7 @@ input[type="text"]{
     .apresentacao-conteudo p{
         font-size: .8em;
     }
-    legend{
-        font-size: 1rem;
-    }
-    .span-sex{  
-        font-size: 1rem;
-    }
-   #btn-result{
-    font-size: .8rem;
-   }
-   .span-reference{
-    font-size: .5rem;
-    text-align: start;
-   }
+    
 }
 
 
