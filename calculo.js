@@ -88,6 +88,10 @@
     // Event
     btn.addEventListener('click', calculo)
 
+    function handleSubmit(event) {
+        event.preventDefault();
+      }   
+
     
     
         
