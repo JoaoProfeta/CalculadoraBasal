@@ -29,9 +29,9 @@
 
         if (getSex[0].checked && weight > 1 && height > 1 && age > 1 ) {
             //Masculine
-            let basalCalculoMen = 66 + (13.8 * weight) + (5 * height)-(6.8 * age)
+            let basalCalculationMen = 66 + (13.8 * weight) + (5 * height)-(6.8 * age)
 
-            result.value = Math.round(basalCalculoMen)
+            result.value = Math.round(basalCalculationMen)
             
         
         
