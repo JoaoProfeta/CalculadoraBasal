@@ -299,6 +299,9 @@ input[type="text"]{
     .apresentacao-conteudo p{
         font-size: .8em;
     }
+    .span-reference{
+        font-size: .5rem;
+    }
 }
 
 
