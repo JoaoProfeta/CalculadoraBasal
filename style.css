@@ -11,6 +11,7 @@ body,html{
     font-family: sans-serif;
     width:100vw;
     height: 100vh;
+    
 }
 body{
     background-image: url(assets/corrida-img-2.jpg);
@@ -19,7 +20,7 @@ body{
     display: flex;
     justify-content: center;  
     overflow-x: hidden;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 /* main */
@@ -58,14 +59,14 @@ main{
 }
 .apresentacao-conteudo h1{
     margin-bottom: 7%;
-    font-size: 3.5em;
+    font-size: 3.5rem;
     animation: fromLeft 0.2s .6s backwards;
 }
 .apresentacao-conteudo p{
     text-indent: 5%;
     text-align: center;
     background: rgba(56,255,0,0.2) ;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 900;
     color: #fff;
     border-radius: 10px;
@@ -197,10 +198,10 @@ input[type="text"]{
 }
 @media (max-width:1000px){
     .apresentacao-conteudo h1{
-        font-size: 2em;
+        font-size: 2.7rem;
     }
     .apresentacao-conteudo p{
-        font-size: 1.2em;
+        font-size: 1.5rem;
     }
     .container{
        height: 500px;
